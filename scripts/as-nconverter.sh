@@ -10,23 +10,6 @@ if [[ $2 != --* ]]; then
 	exit 0
 fi
 
-#for i
-#do
-#  if [[ $i == --* ]]; then
-#    if [[ -v ntype ]]; then
-#      echo 'Only pass one "--type" argument'
-#      exit 0
-#    fi
-#    ntype=$i
-#  else
-#    val=$i
-#  fi
-#done
-#
-#if [[ $ntype == '--dec' ]]; then
-# echo 'a' 
-#fi
-
 val=$1
 ntype=$2
 
@@ -53,12 +36,3 @@ case $ntype in
 		echo "obase=16; ibase=2; $val" | bc
 		;;
 esac
-
-
-#if [ $# -ne 1 ]; then
-#  echo "This script only accepts 1 argument"
-#fi
-
-
-
-
