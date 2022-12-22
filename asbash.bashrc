@@ -1,4 +1,5 @@
 #!/bin/bash
-alias as-nconverter='$XDG_CONFIG_HOME/asbash/scripts/as-nconverter.sh'
-alias astouch='$XDG_CONFIG_HOME/asbash/scripts/astouch.sh'
-alias lscd='$XDG_CONFIG_HOME/asbash/scripts/lscd.sh'
+asb_path="$XDG_CONFIG_HOME/asbash/scripts"
+alias as-nconverter='$asb_path/as-nconverter.sh'
+alias astouch='$asb_path/astouch.sh'
+alias grepf='$asb_path/grepf.sh'
