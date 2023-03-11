@@ -3,6 +3,7 @@ asb_path="$XDG_CONFIG_HOME/asbash/scripts"
 alias asnconv='$asb_path/as-nconverter.sh'
 alias astouch='$asb_path/astouch.sh'
 alias grepf='$asb_path/grepf.sh'
+alias ascmake='$asb_path/ascmake.sh'
 
 function dotdot() {
 
