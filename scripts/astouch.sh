@@ -1,23 +1,13 @@
 
 if [ $# -eq 0 ]; then
   echo "need atleast 1 argument"
+  exit 1
 fi
 
 FILE_PURPOSE=MAIN
 
 for arg in "$@"
 do
-  # main function, or..
-  if [[ $arg == -* ]]; then
-    case $arg in
-      -m)
-        echo "-m"
-      ;;
-      -f)
-        echo "-f"
-        ;;
-    esac
-  else
     touch $arg
     # .cpp
     if [[ $arg == **.cpp ]]; then
@@ -33,5 +23,9 @@ do
     if [[ $arg == *.sh ]]; then
       echo $'#!/bin/bash' >> $arg
     fi
-  fi
+
+    # .py
+    if [[ $arg == *.py ]]; then
+      echo $'def main():\n\tprint("Hello World")\n\n\nif __name__ == "__main__":\n\tmain()' >> $arg
+    fi
 done
