@@ -20,7 +20,11 @@ function dotdot() {
 
   for i in $(seq $1);
   do
-    cd ../ 
+    if [[$(pwd) == "/" ]]; then
+      return 0
+    else
+      cd ../ 
+    fi
   done
 }
 alias ..=dotdot
