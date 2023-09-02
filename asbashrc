@@ -4,6 +4,7 @@ alias asnconv='$asb_path/asconv.sh'
 alias astouch='$asb_path/astouch.sh'
 alias grepf='$asb_path/grepf.sh'
 alias ascmake='$asb_path/ascmake.sh'
+alias clangdify='$asb_path/clangdify.sh'
 
 function dotdot() {
 
