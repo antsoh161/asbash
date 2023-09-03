@@ -33,7 +33,7 @@ if [ -e .clangd ]; then
   fi
 
   # Remove existing .clangd and symlink
-  rm -f .clangd compile_commands.json
+  rm .clangd compile_commands.json
   echo "Existing .clangd file and symlink removed."
 fi
 
